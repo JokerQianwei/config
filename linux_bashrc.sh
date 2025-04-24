@@ -12,8 +12,8 @@ export PATH="$PATH:/home/yqw/nvim-linux-x86_64/bin"
 #######################################
 
 # 设置历史记录大小和格式
-HISTSIZE=5000
-HISTFILESIZE=10000
+HISTSIZE=50000
+HISTFILESIZE=100000
 HISTCONTROL=ignoreboth  # 忽略重复的命令和空格开头的命令
 shopt -s histappend     # 追加到历史文件而不是覆盖
 HISTTIMEFORMAT="%F %T " # 添加时间戳到历史记录
@@ -74,7 +74,6 @@ fi
 #######################################
 # Conda 配置
 #######################################
-
 # >>> conda 初始化 >>>
 # !! 以下内容由 conda 初始化生成，请勿修改 !!
 __conda_setup="$('/home/yqw/miniconda3/bin/conda' 'shell.bash' 'hook' 2>/dev/null)"
@@ -88,11 +87,24 @@ else
   fi
 fi
 unset __conda_setup
-# <<< conda 初始化 <<<
-# 自动激活 dl conda 环境
-conda activate dl
 
-#######################################
+# >>> conda 初始化 >>>
+# 完全重置conda环境变量
+unset CONDA_SHLVL
+unset CONDA_PREFIX
+unset CONDA_PREFIX_1
+unset CONDA_PREFIX_2
+unset CONDA_PREFIX_3
+unset CONDA_PREFIX_4
+unset CONDA_DEFAULT_ENV
+
+# 使用最简单的方式初始化conda
+eval "$(/home/yqw/miniconda3/bin/conda shell.bash hook)"
+
+conda activate dl
+# <<< conda 初始化 <<<
+
+######################################
 # 实用别名
 #######################################
 
