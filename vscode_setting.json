@@ -1,0 +1,73 @@
+{
+    "workbench.colorTheme": "Theme Darker",
+    "files.autoSave": "onFocusChange",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "markdown.occurrencesHighlight.enabled": true,
+    "json.format.enable": true,
+    "editor.renderLineHighlightOnlyWhenFocus": true,
+    "editor.unicodeHighlight.allowedCharacters": {
+        "（": true,
+        "）": true,
+        "：": true,
+        "，": true,
+        "。": true,
+        "×": true,
+        "；": true
+    },
+    "editor.unicodeHighlight.includeStrings": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+    "MATLAB.showFeatureNotAvailableError": false,
+    "python.createEnvironment.trigger": "off",
+    "terminal.integrated.inheritEnv": false,
+    "explorer.confirmDelete": false,
+
+
+    "http.proxy": "http://172.28.184.52:1082",
+    "http.proxyStrictSSL": true,
+    "remote.SSH.useCurlAndWgetConfigurationFiles": true,
+    "remote.SSH.localServerDownload": "always",
+    "remote.SSH.useLocalServer": true,
+    
+    "explorer.confirmDragAndDrop": false,
+
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+
+
+    "mcp": {
+        "servers": {
+            "@smithery-ai/server-sequential-thinking": {
+                "command": "npx",
+                "args": [
+                    "-y",
+                    "@smithery/cli@latest",
+                    "run",
+                    "@smithery-ai/server-sequential-thinking",
+                    "--key",
+                    "456d52a3-5d10-4786-bc89-63e0af26da35"
+                ]
+            }
+        }
+    },
+    "editor.minimap.enabled": false,
+    "chat.commandCenter.enabled": false,
+
+    "augment.chat.userGuidelines": "- Always respond in 中文",
+    "python.analysis.supportAllPythonDocuments": true,
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "workbench.settings.applyToAllProfiles": [
+        
+    ]
+
+}
