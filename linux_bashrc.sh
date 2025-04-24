@@ -75,20 +75,6 @@ fi
 # Conda 配置
 #######################################
 # >>> conda 初始化 >>>
-# !! 以下内容由 conda 初始化生成，请勿修改 !!
-__conda_setup="$('/home/yqw/miniconda3/bin/conda' 'shell.bash' 'hook' 2>/dev/null)"
-if [ $? -eq 0 ]; then
-  eval "$__conda_setup"
-else
-  if [ -f "/home/yqw/miniconda3/etc/profile.d/conda.sh" ]; then
-    . "/home/yqw/miniconda3/etc/profile.d/conda.sh"
-  else
-    export PATH="/home/yqw/miniconda3/bin:$PATH"
-  fi
-fi
-unset __conda_setup
-
-# >>> conda 初始化 >>>
 # 完全重置conda环境变量
 unset CONDA_SHLVL
 unset CONDA_PREFIX
